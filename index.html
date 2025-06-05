@@ -13,6 +13,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <!-- tailwind code 2 -->
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'legal-primary-bg':'rgba(182, 140, 90, 1)',
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
     <!-- style tag -->
      <style>
         .font-garamond{
@@ -24,7 +38,8 @@
      </style>
 </head>
 <body class="font-garamond">
-    <header class="container mx-auto">
+    <header class="md:container md:mx-auto">
+        <!-- navbar section -->
         <nav>
             <div class="navbar">
                 <div class="navbar-start">
@@ -44,7 +59,7 @@
                         </svg>
                     </div>
                     <ul
-                        tabindex="0"
+                        tabindex="z"
                         class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><a>Home</a></li>
                         <li><a>Services</a></li>
@@ -53,7 +68,8 @@
                         <li><a>Contact Us</a></li>
                     </ul>
                     </div>
-                    <a class="font-bold text-xl">daisyUI</a>
+                    <img src="./images/logo.png" alt="" class="invisible md:visible absolute">
+                    <h2 class="lg:left-14 relative font-bold text-2xl">Justice</h2>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -65,10 +81,30 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Button</a>
+                    <button class="btn bg-legal-primary-bg text-white">Free Consultation</button>
                 </div>
                 </div>
         </nav>
+        <!-- navbar end -->
+        <!-- banner section start -->
+         <section class="mt-5 mb-20">
+            <div class="">
+                <div class="hero rounded-lg " style="background-image: url(./images/banner.png);">
+            <div class="hero-content text-neutral-content text-center ">
+            <div class="p-5 lg:p-20 space-y-6">
+                <h1 class="text-3xl lg:text-7xl font-extrabold">We Provide Effective <br>Legal Solutions</h1>
+                <p class="mb-5">
+                <p class="">There are many variations of passages of Lorem Ipsum available, but the majority have <br>suffered alteration in some form, by injected humour.</p>
+                <div class="space-x-5 flex-col">
+                    <input class="font-poppins py-3 px-5 rounded-lg w-1/2" placeholder="Search your services" type="search" name="search" id="">
+                <button class=" btn bg-legal-primary-bg text-white border-none">Get Started</button>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+         </section>
+         <!-- banner section end -->
     </header>
     <!-- main -->
     <main>
